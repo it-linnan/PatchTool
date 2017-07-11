@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <tomcat path="D:\apache-tomcat-7.0.52\webapps\gsdj" />
+  <patch path="F:\patch" />
+  <svn url="svn://172.16.0.155:9999/jcsvn/JC2017013吉林省国家税务局党建信息服务平台/01开发域/03编码实现/gsdj" revisionStart="152209" revisionEnd="157186" dateStart="" dateEnd="" />
+</config>
