@@ -12,16 +12,16 @@
     <Grid>
         <StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
-                <Label Content="应用路径:" VerticalAlignment="Center"></Label>
-                <TextBox Name="tomcatPathTxt" Style="{DynamicResource input-group-btn right}" Button.Click="openFolder_Click" Width="485" Margin="19,0" IsReadOnly="True">
+                <Label Content="应用路径" VerticalAlignment="Center"></Label>
+                <TextBox Name="tomcatPathTxt" Style="{DynamicResource input-group-btn right}" Button.Click="openFolder_Click" Width="485" Margin="21,0" IsReadOnly="True">
                     <TextBox.Tag>
                         <Path Style="{DynamicResource InputGroupPathStyle}" Data="{DynamicResource PathDataSearch}"></Path>
                     </TextBox.Tag>
                 </TextBox>
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
-                <Label Content="更新包路径: " VerticalAlignment="Center"></Label>
-                <TextBox Name="patchPathTxt"  Style="{DynamicResource input-group-btn right}" Button.Click="openFolder_Click" Width="485" IsReadOnly="True">
+                <Label Content="更新包路径" VerticalAlignment="Center"></Label>
+                <TextBox Name="patchPathTxt" Margin="8,5" Style="{DynamicResource input-group-btn right}" Button.Click="openFolder_Click" Width="485" IsReadOnly="True">
                     <TextBox.Tag>
                         <Path Style="{DynamicResource InputGroupPathStyle}" Data="{DynamicResource PathDataSearch}"></Path>
                     </TextBox.Tag>
@@ -29,15 +29,15 @@
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="SVN地址" VerticalAlignment="Center"></Label>
-                <TextBox Margin="10,5" Width="490" Name="svnUrlTxt" />
+                <TextBox Margin="20,5" Width="485" Name="svnUrlTxt" />
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="开始版本" VerticalAlignment="Center"></Label>
-                <TextBox Margin="10,5" Width="200" Name="revisionStartTxt" />
+                <TextBox Margin="20,5" Width="192" Name="revisionStartTxt" />
                 <Label Content="结束版本"  Margin="7,5" VerticalAlignment="Center"></Label>
-                <TextBox Margin="10,5" Width="200" Name="revisionEndTxt" />
+                <TextBox Margin="10,5" Width="192" Name="revisionEndTxt" />
             </StackPanel>
-            <StackPanel Margin="10" Orientation="Horizontal">
+            <StackPanel Margin="5" Orientation="Horizontal">
                 <Button Margin="100 5" Content="保存配置" Style="{DynamicResource btn-primary}" x:Name="saveConfigBtn" Click="saveConfigBtn_Click" />
                 <Button Margin="100 5" Content="生成补丁" Style="{DynamicResource btn-primary}" x:Name="createPatchBtn" Click="createPatchBtn_Click" />
             </StackPanel>
